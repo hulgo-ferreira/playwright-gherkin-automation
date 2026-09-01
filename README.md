@@ -1,6 +1,6 @@
 # SwagLabs Playwright
 
-Projeto de automação com Playwright + JavaScript, organizado para testes de UI e API.
+Projeto de automação com Playwright + TypeScript, organizado para testes de UI e API.
 
 ## Estrutura
 
