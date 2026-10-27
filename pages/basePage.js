@@ -6,4 +6,8 @@ export class BasePage {
     async acessar(url) {
         await this.page.goto(url);
     }
+
+    mensagemDeErro() {
+        return this.page.locator('.alert-dismissible > span');
+    }
 }

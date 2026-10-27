@@ -12,6 +12,8 @@ Projeto de automação com Playwright + TypeScript, organizado para testes de UI
 - `fixtures` - fixtures customizadas do Playwright
 - `data` - dados de teste
 - `utils` - utilitários
+- `features` - cenários BDD escritos em Gherkin
+- `steps` - step definitions que implementam os cenários Gherkin
 
 ## Comandos
 
@@ -19,10 +21,22 @@ Projeto de automação com Playwright + TypeScript, organizado para testes de UI
 npm install
 npx playwright install
 npm run test:ui
+npm run test:bdd
 npm run test:api
 npm test
 npm run report
 ```
+
+## BDD / Gherkin
+
+Os cenários BDD usam `playwright-bdd` e são convertidos em testes Playwright antes da execução.
+
+```bash
+npm run bdd:generate
+npm run test:bdd
+```
+
+Os arquivos `.feature` ficam em `features/`, e suas implementações ficam em `steps/`.
 
 ## Configuração
 

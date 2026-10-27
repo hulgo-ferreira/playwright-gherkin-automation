@@ -4,14 +4,13 @@ export class LoginPage extends BasePage {
     constructor(page) {
         super(page);
 
-        this.usernameInput = page.locator('#user-name');
+        this.usernameInput = page.locator('#email');
         this.passwordInput = page.locator('#password');
-        this.loginButton = page.locator('#login-button');
-        this.errorMessage = page.locator('[data-test="error"]');
+        this.loginButton = page.locator('[data-testid="entrar"]');
     }
 
     async acessarPagina() {
-        await this.acessar('/');
+        await this.acessar('/login');
     }
 
     async realizarLogin(username, password) {
